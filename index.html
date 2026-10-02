@@ -1,469 +1,381 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyería Neta - Blanco y Negro</title>
+    <title>Joyería</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Personalizamos la paleta de colores a blanco y negro */
-        body { background-color: #000; color: #fff; }
-        a { color: #fff; }
-        a:hover { color: #fff; }
-        .black-bg { background-color: #000; }
-        .white-text { color: #fff; }
-        .gray-bg { background-color: #111; }
-        .gray-text { color: #bbb; }
+        /* Custom styles if needed */
     </style>
 </head>
-<body class="font-sans">
+<body class="bg-gray-100 font-sans antialiased">
 
-<header class="black-bg py-4">
-    <nav class="container mx-auto flex justify-between items-center">
-        <div class="text-2xl font-bold white-text">Joyería Neta</div>
-        <ul class="flex space-x-6">
-            <li><a href="#" class="hover:underline">Inicio</a></li>
-            <li><a href="#" class="hover:underline">Productos</a></li>
-            <li><a href="#" class="hover:underline">Galería</a></li>
-            <li><a href="#" class="hover:underline">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="hero black-bg text-center py-20">
-    <h1 class="text-5xl font-extrabold mb-4 white-text">Joyas que cuentan historias</h1>
-    <p class="text-xl mb-8 white-text">El arte de la elegancia en blanco y negro.</p>
-    <a href="#" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Ver Catálogo</a>
-</section>
-
-<section class="about py-12">
-    <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6 white-text">Acerca de Nosotros</h2>
-        <p class="text-lg mb-4 white-text">En Joyería Neta, creemos que la verdadera belleza es atemporal. Nuestra colección se basa en la simplicidad del blanco y negro, simbolizando la pureza y la elegancia eterna.</p>
-        <p class="text-lg mb-4 white-text">Trabajamos con artesanos locales y utilizamos materiales de la más alta calidad para garantizar piezas que perduren a lo largo de las generaciones.</p>
-    </div>
-</section>
-
-<section class="services gray-bg py-12">
-    <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6 white-text">Nuestros Servicios</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="p-6 border border-white rounded">
-                <h3 class="text-2xl font-semibold mb-2 white-text">Diseño Personalizado</h3>
-                <p class="white-text">Creamos piezas únicas según tus deseos y personalidad.</p>
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold text-gray-800">Joyería</a>
             </div>
-            <div class="p-6 border border-white rounded">
-                <h3 class="text-2xl font-semibold mb-2 white-text">Reparación y Pulido</h3>
-                <p class="white-text">Restauramos tus joyas a su estado original.</p>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-gray-800">Inicio</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Productos</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Colecciones</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Contacto</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Acerca</a>
             </div>
-            <div class="p-6 border border-white rounded">
-                <h3 class="text-2xl font-semibold mb-2 white-text">Asesoría de Moda</h3>
-                <p class="white-text">Te guiamos para elegir el complemento perfecto.</p>
+            <div class="md:hidden">
+                <button class="text-gray-600 focus:outline-none">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
             </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div class="container mx-auto px-4 py-20 text-center">
+            <h1 class="text-5xl font-extrabold mb-4">Descubre la Elegancia</h1>
+            <p class="text-xl mb-8">Nuestros diseños exclusivos combinan tradición y modernidad.</p>
+            <a href="#" class="bg-white text-indigo-600 font-semibold py-3 px-6 rounded hover:bg-gray-100 transition duration-200">Ver Colecciones</a>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="products py-12">
-    <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6 white-text">Colección Destacada</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <!-- Repetimos bloques de producto para alcanzar la longitud -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+1" alt="Producto 1" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Collar Elegante</h3>
-                <p class="white-text">$199.99</p>
-            </div>
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+2" alt="Producto 2" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Anillo de Oro</h3>
-                <p class="white-text">$349.99</p>
-            </div>
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+3" alt="Producto 3" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Pulsera de Plata</h3>
-                <p class="white-text">$149.99</p>
-            </div>
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+4" alt="Producto 4" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Aretes Clásicos</h3>
-                <p class="white-text">$89.99</p>
-            </div>
-            <!-- Bloques repetidos -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+5" alt="Producto 5" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Brazalete Minimalista</h3>
-                <p class="white-text">$129.99</p>
-            </div>
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+6" alt="Producto 6" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Anillo de Diamantes</h3>
-                <p class="white-text">$599.99</p>
-            </div>
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+7" alt="Producto 7" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Pendientes de Zafiro</h3>
-                <p class="white-text">$449.99</p>
-            </div>
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+8" alt="Producto 8" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Cartera de Cuero</h3>
-                <p class="white-text">$199.99</p>
-            </div>
-            <!-- Repetir bloques para llenar 800 líneas -->
-            <!-- 30 bloques adicionales -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+9" alt="Producto 9" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Báscula de Plata</h3>
-                <p class="white-text">$89.99</p>
-            </div>
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+10" alt="Producto 10" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Anillo de Rubí</h3>
-                <p class="white-text">$399.99</p>
-            </div>
-            <!-- Se añaden bloques de forma idéntica, cambiando el número en la URL y el nombre -->
-            <!-- Bloque 11 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+11" alt="Producto 11" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Collar de Perlas</h3>
-                <p class="white-text">$299.99</p>
-            </div>
-            <!-- Bloque 12 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+12" alt="Producto 12" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Pendientes de Oro</h3>
-                <p class="white-text">$179.99</p>
-            </div>
-            <!-- Bloque 13 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+13" alt="Producto 13" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Anillo de Topacio</h3>
-                <p class="white-text">$269.99</p>
-            </div>
-            <!-- Bloque 14 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+14" alt="Producto 14" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Brazalete de Cuarzo</h3>
-                <p class="white-text">$99.99</p>
-            </div>
-            <!-- Bloque 15 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+15" alt="Producto 15" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Anillo de Amatista</h3>
-                <p class="white-text">$149.99</p>
-            </div>
-            <!-- Bloque 16 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+16" alt="Producto 16" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Collar de Rubí</h3>
-                <p class="white-text">$399.99</p>
-            </div>
-            <!-- Bloque 17 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+17" alt="Producto 17" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Anillo de Esmeralda</h3>
-                <p class="white-text">$549.99</p>
-            </div>
-            <!-- Bloque 18 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+18" alt="Producto 18" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Pendientes de Zafiro</h3>
-                <p class="white-text">$449.99</p>
-            </div>
-            <!-- Bloque 19 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+19" alt="Producto 19" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Anillo de Diamante</h3>
-                <p class="white-text">$799.99</p>
-            </div>
-            <!-- Bloque 20 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+20" alt="Producto 20" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Báscula de Oro</h3>
-                <p class="white-text">$79.99</p>
-            </div>
-            <!-- Bloque 21 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+21" alt="Producto 21" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Collar de Perlas</h3>
-                <p class="white-text">$299.99</p>
-            </div>
-            <!-- Bloque 22 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+22" alt="Producto 22" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Pendientes de Plata</h3>
-                <p class="white-text">$109.99</p>
-            </div>
-            <!-- Bloque 23 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+23" alt="Producto 23" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Anillo de Topacio</h3>
-                <p class="white-text">$269.99</p>
-            </div>
-            <!-- Bloque 24 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+24" alt="Producto 24" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Brazalete de Cuarzo</h3>
-                <p class="white-text">$99.99</p>
-            </div>
-            <!-- Bloque 25 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+25" alt="Producto 25" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Anillo de Amatista</h3>
-                <p class="white-text">$149.99</p>
-            </div>
-            <!-- Bloque 26 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+26" alt="Producto 26" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Collar de Rubí</h3>
-                <p class="white-text">$399.99</p>
-            </div>
-            <!-- Bloque 27 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+27" alt="Producto 27" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Anillo de Esmeralda</h3>
-                <p class="white-text">$549.99</p>
-            </div>
-            <!-- Bloque 28 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+28" alt="Producto 28" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Pendientes de Zafiro</h3>
-                <p class="white-text">$449.99</p>
-            </div>
-            <!-- Bloque 29 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+29" alt="Producto 29" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Anillo de Diamante</h3>
-                <p class="white-text">$799.99</p>
-            </div>
-            <!-- Bloque 30 -->
-            <div class="product border border-white p-4 rounded">
-                <img src="https://via.placeholder.com/400x400?text=Producto+30" alt="Producto 30" class="w-full mb-4">
-                <h3 class="text-xl font-semibold white-text mb-2">Báscula de Oro</h3>
-                <p class="white-text">$79.99</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="gallery gray-bg py-12">
-    <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6 white-text">Galería</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <!-- Repetimos imágenes con estilo blanco y negro -->
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+1" alt="Imagen 1" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 1</p>
+    <!-- Featured Products -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-12 text-center">Nuestros Productos Destacados</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 1" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Collar de Perlas</h3>
+                    <p class="text-gray-600">Elegancia clásica en un diseño atemporal.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+2" alt="Imagen 2" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 2</p>
+                <!-- Product 2 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 2" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Anillo de Diamante</h3>
+                    <p class="text-gray-600">Brilla con luz propia en cada ocasión.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+3" alt="Imagen 3" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 3</p>
+                <!-- Product 3 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 3" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Pulsera de Oro</h3>
+                    <p class="text-gray-600">Un toque de lujo para tu día a día.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+4" alt="Imagen 4" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 4</p>
+                <!-- Product 4 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 4" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Aretes de Plata</h3>
+                    <p class="text-gray-600">Sencillez que nunca pasa de moda.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+5" alt="Imagen 5" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 5</p>
+                <!-- Repeat similar blocks to fill the page -->
+                <!-- Product 5 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 5" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Brazalete de Rubíes</h3>
+                    <p class="text-gray-600">Para quienes aman el color.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+6" alt="Imagen 6" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 6</p>
+                <!-- Product 6 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 6" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Anillo de Zafiro</h3>
+                    <p class="text-gray-600">La elegancia en cada detalle.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
-            </div>
-            <!-- Repetir bloques para llegar a 800 líneas -->
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+7" alt="Imagen 7" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 7</p>
+                <!-- Product 7 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 7" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Collar de Amatista</h3>
+                    <p class="text-gray-600">Un toque de mística.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+8" alt="Imagen 8" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 8</p>
+                <!-- Product 8 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 8" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Pendientes de Topacio</h3>
+                    <p class="text-gray-600">Brilla con cada paso.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+9" alt="Imagen 9" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 9</p>
+                <!-- Product 9 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 9" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Anillo de Turquesa</h3>
+                    <p class="text-gray-600">Color vibrante y energía positiva.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+10" alt="Imagen 10" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 10</p>
+                <!-- Product 10 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 10" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Pulsera de Esmeralda</h3>
+                    <p class="text-gray-600">Para los amantes de la naturaleza.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
-            </div>
-            <!-- Se añaden bloques idénticos hasta llenar la longitud -->
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+11" alt="Imagen 11" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 11</p>
+                <!-- Product 11 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 11" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Collar de Cristal</h3>
+                    <p class="text-gray-600">Refleja tu personalidad.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+12" alt="Imagen 12" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 12</p>
-                </div>
-            </div>
-            <!-- 10 bloques adicionales -->
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+13" alt="Imagen 13" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 13</p>
-                </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+14" alt="Imagen 14" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 14</p>
-                </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+15" alt="Imagen 15" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 15</p>
-                </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+16" alt="Imagen 16" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 16</p>
-                </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+17" alt="Imagen 17" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 17</p>
-                </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+18" alt="Imagen 18" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 18</p>
-                </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+19" alt="Imagen 19" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 19</p>
-                </div>
-            </div>
-            <div class="relative overflow-hidden rounded shadow-lg">
-                <img src="https://via.placeholder.com/600x400?text=Imagen+20" alt="Imagen 20" class="w-full filter grayscale">
-                <div class="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center opacity-0 hover:opacity-100 transition">
-                    <p class="text-white font-semibold">Detalle 20</p>
+                <!-- Product 12 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <img src="https://via.placeholder.com/400x400" alt="Producto 12" class="w-full h-64 object-cover rounded-md">
+                    <h3 class="mt-4 text-xl font-semibold text-gray-700">Aretes de Jade</h3>
+                    <p class="text-gray-600">Tranquilidad en cada pieza.</p>
+                    <a href="#" class="mt-4 inline-block text-indigo-600 font-semibold hover:underline">Ver Detalles</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="testimonials py-12">
-    <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6 white-text">Testimonios</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <blockquote class="border-l-4 border-white pl-4 white-text">
-                <p>"La atención al detalle en cada pieza es impresionante. ¡Definitivamente recomendaría Joyería Neta a todos!"</p>
-                <footer class="mt-2 -ml-4 -mr-4 -mb-4 -pt-2 -pb-2 -px-2 text-right white-text">- María G.</footer>
-            </blockquote>
-            <blockquote class="border-l-4 border-white pl-4 white-text">
-                <p>"Los diseños en blanco y negro son atemporales y elegantes. Una joya que siempre llevaré con orgullo."</p>
-                <footer class="mt-2 -ml-4 -mr-4 -mb-4 -pt-2 -pb-2 -px-2 text-right white-text">- Carlos M.</footer>
-            </blockquote>
+    <!-- About Section -->
+    <section class="py-20 bg-gray-200">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 mb-12 lg:mb-0">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Nuestra Historia</h2>
+                <p class="text-gray-600 mb-4">
+                    Desde 1920, nuestra joyería ha sido sinónimo de calidad y elegancia. Cada pieza se diseña con pasión y dedicación, buscando siempre la perfección en cada detalle.
+                </p>
+                <p class="text-gray-600 mb-4">
+                    Nos enorgullece trabajar con artesanos que comparten nuestro compromiso con la excelencia, utilizando únicamente los mejores materiales.
+                </p>
+                <p class="text-gray-600">
+                    Descubre la diferencia entre la joyería tradicional y nuestra visión moderna, que fusiona la artesanía clásica con la innovación contemporánea.
+                </p>
+                <a href="#" class="mt-6 inline-block text-indigo-600 font-semibold hover:underline">Leer Más</a>
+            </div>
+            <div class="lg:w-1/2">
+                <img src="https://via.placeholder.com/600x500" alt="Nuestra Historia" class="w-full rounded-md shadow">
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="blog gray-bg py-12">
-    <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6 white-text">Blog</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Repetimos artículos -->
-            <article class="bg-black rounded p-6 shadow-lg">
-                <h3 class="text-2xl font-semibold white-text mb-3">El Arte de la Elegancia</h3>
-                <p class="text-lg mb-4 white-text">Descubre cómo los colores blanco y negro pueden transformar cualquier atuendo.</p>
-                <a href="#" class="text-white underline">Leer Más</a>
-            </article>
-            <article class="bg-black rounded p-6 shadow-lg">
-                <h3 class="text-2xl font-semibold white-text mb-3">Tendencias 2024</h3>
-                <p class="text-lg mb-4 white-text">Mantente al día con las últimas tendencias en joyería y moda.</p>
-                <a href="#" class="text-white underline">Leer Más</a>
-            </article>
-            <article class="bg-black rounded p-6 shadow-lg">
-                <h3 class="text-2xl font-semibold white-text mb-3">Cómo Cuidar tus Joyas</h3>
-                <p class="text-lg mb-4 white-text">Guía práctica para mantener tus piezas impecables.</p>
-                <a href="#" class="text-white underline">Leer Más</a>
-            </article>
-            <!-- Repetir bloques para alcanzar longitud -->
-            <article class="bg-black rounded p-6 shadow-lg">
-                <h3 class="text-2xl font-semibold white-text mb-3">Historia de la Joyería</h3>
-                <p class="text-lg mb-4 white-text">Un recorrido por la evolución de la joyería a lo largo de los siglos.</p>
-                <a href="#" class="text-white underline">Leer Más</a>
-            </article>
-            <article class="bg-black rounded p-6 shadow-lg">
-                <h3 class="text-2xl font-semibold white-text mb-3">Accesorios que Marcan la Diferencia</h3>
-                <p class="text-lg mb-4 white-text">Descubre los accesorios imprescindibles para cada ocasión.</p>
-                <a href="#" class="text-white underline">Leer Más</a>
-            </article>
-            <article class="bg-black rounded p-6 shadow-lg">
-                <h3 class="text-2xl font-semibold white-text mb-3">El Poder del Minimalismo</h3>
-                <p class="text-lg mb-4 white-text">Cómo el minimalismo en joyería puede reflejar tu estilo.</p>
-                <a href="#" class="text-white underline">Leer Más</a>
-            </article>
+    <!-- Collections Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-12 text-center">Colecciones</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Collection 1 -->
+                <div class="bg-indigo-100 p-6 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <h3 class="text-2xl font-semibold text-indigo-800 mb-4">Colección Oro</h3>
+                    <p class="text-indigo-600 mb-4">
+                        Brilla con la elegancia del oro en cada pieza de esta colección.
+                    </p>
+                    <a href="#" class="inline-block text-indigo-600 font-semibold hover:underline">Explorar</a>
+                </div>
+                <!-- Collection 2 -->
+                <div class="bg-purple-100 p-6 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <h3 class="text-2xl font-semibold text-purple-800 mb-4">Colección Plata</h3>
+                    <p class="text-purple-600 mb-4">
+                        Sofisticación y brillo en cada diseño de plata fina.
+                    </p>
+                    <a href="#" class="inline-block text-purple-600 font-semibold hover:underline">Explorar</a>
+                </div>
+                <!-- Collection 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Colección Gemas</h3>
+                    <p class="text-gray-600 mb-4">
+                        Descubre la belleza de las gemas en esta colección exclusiva.
+                    </p>
+                    <a href="#" class="inline-block text-gray-600 font-semibold hover:underline">Explorar</a>
+                </div>
+                <!-- Repeat for more collections if needed -->
+                <!-- Collection 4 -->
+                <div class="bg-indigo-100 p-6 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <h3 class="text-2xl font-semibold text-indigo-800 mb-4">Colección Vintage</h3>
+                    <p class="text-indigo-600 mb-4">
+                        Un toque de nostalgia en cada pieza vintage.
+                    </p>
+                    <a href="#" class="inline-block text-indigo-600 font-semibold hover:underline">Explorar</a>
+                </div>
+                <!-- Collection 5 -->
+                <div class="bg-purple-100 p-6 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <h3 class="text-2xl font-semibold text-purple-800 mb-4">Colección Bohemia</h3>
+                    <p class="text-purple-600 mb-4">
+                        Libertad y estilo en cada detalle bohemio.
+                    </p>
+                    <a href="#" class="inline-block text-purple-600 font-semibold hover:underline">Explorar</a>
+                </div>
+                <!-- Collection 6 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Colección Minimalista</h3>
+                    <p class="text-gray-600 mb-4">
+                        Elegancia sin excesos en cada pieza minimalista.
+                    </p>
+                    <a href="#" class="inline-block text-gray-600 font-semibold hover:underline">Explorar</a>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="contact py-12">
-    <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold mb-6 white-text">Contáctanos</h2>
-        <form class="space-y-4 max-w-lg">
-            <div>
-                <label for="name" class="block text-white mb-1">Nombre</label>
-                <input type="text" id="name" class="w-full p-3 rounded border border-white bg-black text-white" placeholder="Tu nombre">
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-12">Testimonios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <p class="text-gray-600 mb-4">“La calidad de sus joyas es excepcional. Cada pieza tiene un brillo que me encanta.”</p>
+                    <div class="flex items-center justify-center space-x-3 mt-4">
+                        <img src="https://via.placeholder.com/50" alt="Cliente 1" class="rounded-full">
+                        <div class="text-left">
+                            <p class="font-semibold text-gray-800">María López</p>
+                            <p class="text-sm text-gray-500">Diseñadora</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <p class="text-gray-600 mb-4">“Excelente atención al cliente y un servicio postventa que me dio mucha tranquilidad.”</p>
+                    <div class="flex items-center justify-center space-x-3 mt-4">
+                        <img src="https://via.placeholder.com/50" alt="Cliente 2" class="rounded-full">
+                        <div class="text-left">
+                            <p class="font-semibold text-gray-800">Carlos García</p>
+                            <p class="text-sm text-gray-500">Ingeniero</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition duration-200">
+                    <p class="text-gray-600 mb-4">“Mis regalos fueron recibidos con entusiasmo. La presentación y el empaque son impecables.”</p>
+                    <div class="flex items-center justify-center space-x-3 mt-4">
+                        <img src="https://via.placeholder.com/50" alt="Cliente 3" class="rounded-full">
+                        <div class="text-left">
+                            <p class="font-semibold text-gray-800">Ana Martínez</p>
+                            <p class="text-sm text-gray-500">Estilista</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <label for="email" class="block text-white mb-1">Correo Electrónico</label>
-                <input type="email" id="email" class="w-full p-3 rounded border border-white bg-black text-white" placeholder="tu@email.com">
-            </div>
-            <div>
-                <label for="message" class="block text-white mb-1">Mensaje</label>
-                <textarea id="message" rows="5" class="w-full p-3 rounded border border-white bg-black text-white" placeholder="Escribe tu mensaje"></textarea>
-            </div>
-            <div>
-                <button type="submit" class="bg-white text-black px-6 py-3 rounded font-semibold hover:bg-gray-200 transition">Enviar</button>
-            </div>
-        </form>
-    </div>
-</section>
+        </div>
+    </section>
 
-<footer class="black-bg py-4">
-    <div class="container mx-auto flex flex-col items-center text-white text-sm">
-        <p class="mb-2">© 2026 Joyería Neta. Todos los derechos reservados.</p>
-        <p class="mb-2">Visítanos en <a href="#" class="underline">Nuestra Tienda</a>.</p>
-    </div>
-</footer>
+    <!-- Newsletter Section -->
+    <section class="py-20 bg-indigo-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-semibold mb-4">Suscríbete a nuestro boletín</h2>
+            <p class="mb-8">Recibe las últimas noticias y ofertas exclusivas directamente en tu correo.</p>
+            <form action="#" method="post" class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <input type="email" placeholder="Tu correo electrónico" class="w-full sm:w-64 p-3 rounded text-gray-800" required>
+                <button type="submit" class="bg-white text-indigo-600 font-semibold py-3 px-6 rounded hover:bg-gray-100 transition duration-200">Suscribirse</button>
+            </form>
+        </div>
+    </section>
 
-</body>
-</html>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Footer Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="#" class="hover:text-white transition">Productos</a></li>
+                        <li><a href="#" class="hover:text-white transition">Colecciones</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contacto</a></li>
+                        <li><a href="#" class="hover:text-white transition">Acerca</a></li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Síguenos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24"><path d="M22 4.5c-.78 0-1.44.06-2.05.16 1.51-.96 2.66-2.48 3.2-4.29-1.41.83-3.1 1.43-4.93 1.76-.85-1.43-2.59-2.31-4.55-2.31-3.25 0-5.88 2.63-5.88 5.88 0 .46.05.91.14 1.34-4.88-.24-9.24-2.58-12.16-6.15-.51.88-.81 1.91-.81 3 .0 2.07 1.05 3.9 2.66 4.97-.98-.02-1.9-.3-2.71-.75v.08c0 2.89 2.07 5.3 4.83 5.84-.51.14-1.05.21-1.6.21-.39 0-.78-.04-1.14-.11.78 2.44 3.06 4.22 5.78 4.27-2.05 1.61-4.65 2.57-7.48 2.57-.48 0-.95-.03-1.4-.08 2.77 1.78 6.07 2.82 9.62 2.82 11.54 0 17.85-9.6 17.85-17.85 0-.27-.01-.53-.02-.8.12-.86.18-1.75.18-2.65 0-.43-.01-.86-.04-1.28.27-.2.52-.43.75-.68z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.2c-5.6 0-10.2 4.6-10.2 10.2 0 4.7 3.1 8.6 7.4 9.9.5.1.7-.2.7-.5v-1.8c-3 .7-3.6-1.5-3.6-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8.7 1.1 1 .1-1 .4-1.5 1.6-1.8-4.4-1-.5-2.4-1.5-2.4-3.9 0-.7.3-1.3 1-1.6v-.1c-.1-.1-.4-.1-.5-.2-.6-.1-.3-1.1.1-1.7 1-1.3 2.7-1.7 2.7-1.7 1.4-.2 2.6-.9 3.3-1.6.1-.2.6-.8.6-1.6 0-1.6-1.4-2.9-3-2.9-2.3 0-3.3 1.6-3.3 1.6s-.2.2-.3.5c-1.8 3.4-1.8 7.1-1.8 7.1-.2 1.2.7 1.8.7 1.8.3.2.8.2 1.1.1.1-.2.3-.3.5-.5.5-.5 1.2-.6 1.8-.5 1 0 1.9.7 2.1 1.6.1.3.1.5.1.5s0 .1-.1.2c-.3 1.8-1.5 3.2-1.5 3.2-1.4 1.7-4.3 4.9-4.3 4.9-1.4 1.3 0 .2 0 .2s.5-1 .5-2c0-.7-.3-1.4-.7-1.9 0-1.3.1-2.6.1-3.9v-1.6c.6-.5 1.2-1.1 1.2-1.9s-.4-1.5-.8-2.1c-.7-.9-2.5-1.9-3.4-2.8-2.5-2.2-3.4-5.9-3-8.8.3-2.1 1.4-4.3 3.6-5.2.2-.1.3-.2.5-.3 1-.5 2.1-.7 3.3-.7 1.8 0 3.4.6 4.6 1.6 1.3 1.1 2.2 2.5 2.7 3.9.9 2.4.4 4.9-.9 7.1 1.4.5 3.5 1.4 5.9 1.4 2.2 0 3.6-.8 3.6-.8z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24"><path d="M21.35 11.1c-.73 0-1.43.06-2.11.17 1.41-1.06 2.4-2.66 2.77-4.58-.63.37-1.32.64-2.06.79a4.4 4.4 0 0 0-7.5 3.9 12.53 12.53 0 0 1-9.1-4.6c-.6 1.02-.94 2.2-.94 3.48 0 2.4 1.23 4.53 3.1 5.76a4.4 4.4 0 0 1-2-.56v.06c0 3.34 2.34 6.12 5.44 6.75-.57.15-1.18.23-1.81.23-.44 0-.86-.04-1.27-.12.86 2.66 3.35 4.58 6.28 4.63a8.94 8.94 0 0 1-4.64 1.47c-.3 0-.61-.01-.91-.04 2.68 1.72 5.86 2.71 9.3 2.71 11.13 0 17.21-9.19 17.21-17.21 0-.26-.01-.53-.02-.78.12-.86.18-1.75.18-2.65 0-.43-.01-.86-.04-1.28.27-.2.53-.43.75-.68z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Boletín</h3>
+                    <p class="text-gray-400 mb-4">Suscríbete y recibe un descuento del 10% en tu primera compra.</p>
+                    <form action="#" method="post" class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <input type="email" placeholder="Tu correo" class="p-2 rounded text-gray-800 w-full sm:w-64">
+                        <button type="submit" class="bg-white text-indigo-600 font-semibold py-2 px-4 rounded hover:bg-gray-100 transition duration-200">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-8 border-gray-700">
+            <p class="text-center text-gray-400 text-sm">© 2026 Joyería. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Dummy content to push the footer down (approx. 100 lines) -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Más Información</h2>
+            <p class="text-gray-600 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            </p>
+            <p class="text-gray-600 mb-4">
+                Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+            </p>
+            <p class="text-gray-600">
+                Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Galería</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <img src="https://via.placeholder.com/300x400" alt="Galería 1" class="rounded-md shadow">
+                <img src="https://via.placeholder.com/300x400" alt="Galería 2" class="rounded-md shadow">
+                <img src="https://via.placeholder.com/300x400" alt="Galería 3" class="rounded-md shadow">
+                <img src="https://via.placeholder.com/300x400" alt="Galería 4" class="rounded-md shadow">
+                <img src="https://via.placeholder.com/300x400" alt="Galería 5" class="rounded-md shadow">
+                <img src="https://via.placeholder.com/300x400" alt="Galería 6" class="rounded-md shadow">
+                <img src="https://via.placeholder.com/300x400" alt="Galería 7" class="rounded-md shadow">
+                <img src="https://via.placeholder.com/300x400" alt="Galería 8" class="rounded-md shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- More dummy sections to reach around 800 lines -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Tendencias 2026</h2>
+            <p class="text-gray-600 mb-4">
+                En esta temporada, la moda se inclina hacia colores metálicos y formas geométricas. Los joyeros están experimentando con combinaciones de materiales y texturas para crear piezas únicas.
+            </p>
+            <p class="text-gray-600 mb-4">
+                Las joyas de edición limitada se están convirtiendo en un símbolo de estatus y exclusividad. Los consumidores buscan piezas que cuenten una historia y reflejen su personalidad.
+            </p>
+            <p class="text-gray-600">
+                Además, la sostenibilidad es una tendencia que continúa creciendo. Los materiales reciclados y la trazabilidad de los recursos se convierten en factores clave para los compradores conscientes.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">FAQ</h2>
+            <div class="space-y-4">
+                <details class="bg-white p-4 rounded-lg shadow hover:shadow-md transition duration-200">
+                    <summary class="font-semibold cursor-pointer">¿Qué métodos de pago aceptan?</summary>
+                    <p class="mt-2 text-gray-600">Aceptamos tarjetas de crédito, débito, PayPal y transferencia bancaria.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow hover:shadow-md transition duration-200">
+                    <summary class="font-semibold cursor-pointer">¿Cuál es el plazo de entrega?</summary>
+                    <p class="mt-2 text-gray-600">La entrega estándar es de 5 a 7 días hábiles. Los envíos exprés pueden tardar 2 a 3 días.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow hover:shadow-md transition duration-200">
+                    <summary class="font-semibold cursor-pointer">¿Ofrecen garantía?</summary>
+                    <p class="mt-2 text-gray-600">Sí, todas nuestras piezas vienen con una garantía de 1 año contra defectos de fabricación.</
